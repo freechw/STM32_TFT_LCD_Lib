@@ -701,6 +701,7 @@ void LCD_ShowString(uint16_t x,uint16_t y,uint16_t width,uint16_t height,uint8_t
 void LCD_Init(void(*delay)(uint32_t))
 { 
 	delayFunc = delay;
+	delay(10);
 	LCD_GetID();
 	if(lcddev.id==0X9341)	//9341≥ı ºªØ
 	{	 
